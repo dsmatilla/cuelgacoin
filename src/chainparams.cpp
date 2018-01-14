@@ -139,7 +139,10 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x3342e2befeccb3e6c05db36ff424433c33160c1a37063e5184fb163c81c1d587"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        vSeeds.emplace_back("seed.cuelgame.net", true);
+        vSeeds.emplace_back("node1.cuelgame.net", true);
+        vSeeds.emplace_back("node2.cuelgame.net", true);
+        vSeeds.emplace_back("node3.cuelgame.net", true);
+        vSeeds.emplace_back("node4.cuelgame.net", true);
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,39);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,3);
